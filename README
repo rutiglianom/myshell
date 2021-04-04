@@ -1,0 +1,17 @@
+Matthew Rutigliano (Done alone)
+CPSC 3500
+Project 2: Shell
+27 January 2021
+
+I had a long battle with the pipes not working, until I realized I had a backwards
+comparison and they were never being created. After that, everything worked great.
+
+Strengths: Works with single commands, commands with single pipe, commands with two
+or more pipes, commands with many pipes and a lot of data. Commands can have any number of
+trailing spaces.
+
+Weaknesses: Doesn't work with the supplied example command with many pipes and a
+lot of data, but neither does my bash. By modifying the arguments that create errors,
+it works. Shell still handles errors as expected, making it the fault of an incorrect
+command. Code could be more efficient (having two cases, one with pipes and one without,
+seems wasteful)
